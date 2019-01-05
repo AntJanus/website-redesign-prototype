@@ -1,0 +1,223 @@
+:root {
+  --main-color: #91afd6;
+  --background: #132133;
+  --main-color-dark: #3d5778;
+}
+
+body,
+html,
+.container {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--background);
+  font-family: "Open Sans", Verdana, Arial, sans-serif;
+  font-size: 1.25em;
+}
+
+a {
+  color: var(--main-color-dark);
+  transition: 0.2s all;
+
+  &:hover {
+    color: var(--background);
+  }
+}
+
+header {
+  background: var(--background);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+header nav {
+  display: grid;
+  grid-template-columns: 80px 1fr 150px;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+
+    .fas {
+      display: block;
+      font-size: 24px;
+      margin-bottom: 5px;
+    }
+  }
+
+  ul li a {
+    width: 150px;
+    max-width: 150px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 0;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.2s all ease-in;
+    display: block;
+    font-family: sans-serif;
+
+    border-top: 4px solid transparent;
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+
+    .fas {
+      transition: 0.1s all;
+      margin-top: 2px;
+    }
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.06);
+      border-top: 4px solid var(--main-color);
+      color: #fff;
+
+      span {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+.social-media {
+  display: flex;
+  align-items: center;
+
+  a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    transition: 0.1s color ease-in;
+    transition: 0.2s font-size ease-in;
+
+    &:hover {
+      color: var(--main-color);
+      font-size: 32px;
+    }
+  }
+}
+
+main {
+  h1 {
+  }
+}
+
+.content-header {
+  overflow: hidden;
+  color: #fff;
+  max-width: 1350px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 0 50px;
+  background-color: var(--background);
+  position: relative;
+  z-index: 1;
+
+  a {
+    color: #fff;
+  }
+
+  li {
+    padding-bottom: 1em;
+  }
+}
+
+.content-image {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  background: radial-gradient(
+      ellipse closest-side,
+      rgba(0, 0, 0, 0.1),
+      var(--background)
+    ),
+    url(https://antjanusblog-antjanus.netdna-ssl.com/wp-content/uploads/2018/11/2018-year-gone-by-titled-1024x430.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+.content-header-info {
+  padding-top: 30px;
+  padding-left: 25px;
+  z-index: 1;
+}
+
+.content-container {
+  background: #fff;
+  padding: 50px 0;
+
+  .content {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+
+  h2 {
+    font-size: 1.75em;
+    line-height: 1.125em;
+    margin-bottom: 0.75em;
+    color: var(--main-color-dark);
+    font-weight: bold;
+  }
+
+  h3 {
+    font-size: 1.3em;
+    line-height: 1.125em;
+    margin-bottom: 0.75em;
+    color: var(--main-color-dark);
+    font-weight: bold;
+  }
+
+  p,
+  ul {
+    margin-top: 0;
+    margin-bottom: 1.5em;
+    line-height: 1.5em;
+    max-width: 800px;
+  }
+}
+
+.logo {
+  text-align: right;
+  padding-right: 100px;
+  display: flex;
+  align-items: center;
+
+  a {
+    display: block;
+  }
+}
+
+.button {
+  text-decoration: none;
+  padding: 5px 8px;
+  background-color: #fff;
+  border: 2px solid var(--background);
+  color: var(--background) !important;
+  font-weight: bold;
+  border-radius: 2px;
+  transition: 0.2s all ease-in;
+
+  &:hover {
+    background-color: var(--background);
+    color: #fff !important;
+    border: 2px solid #fff;
+  }
+}
+
+.button-white {
+}
